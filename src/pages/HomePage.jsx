@@ -2,9 +2,17 @@ import React from 'react';
 import { FaDiamond } from 'react-icons/fa6';
 import { IoDiamondOutline } from "react-icons/io5";
 import './../index.css';
-
+import { FaXTwitter } from "react-icons/fa6";
+import { FaTelegramPlane, FaRedditAlien, FaDiscord } from "react-icons/fa";
 import { FaLessThan, FaGreaterThan } from "react-icons/fa";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
+import { AiOutlineInfoCircle } from "react-icons/ai";
+import { SlCreditCard } from "react-icons/sl";
+import { SlGlobe } from "react-icons/sl";
+
+
+import { BsSubstack } from "react-icons/bs";
+
 import { IoCubeOutline } from "react-icons/io5";
 
 
@@ -231,25 +239,21 @@ const HomePage = () => {
           <div className="bg-white rounded-2xl shadow-sm p-6 space-y-4">
             <div className="flex justify-between items-center">
               <h3 className="text-lg font-bold">Docs</h3>
-              <a
-                href="#"
-                className="text-blue-600 text-sm font-medium bg-blue-50 hover:bg-blue-100 px-3 py-1 rounded-xl border border-blue-100"
-              >
-                View all
-              </a>
+              <a href="#" className="text-blue-600 text-sm font-medium bg-blue-50 hover:bg-blue-100 px-3 py-1 rounded-xl border border-blue-100"
+              >View all</a>
             </div>
             <div className="space-y-3 text-sm text-gray-500">
               <a href="#" className="flex items-center gap-2 hover:underline">
-                <span>🌐</span> Getting started
+                <span> <SlGlobe className=' text-gray-500 h-5 w-5 ' /> </span> Getting started
               </a>
               <a href="#" className="flex items-center gap-2 hover:underline">
-                <span>ℹ️</span> Service plans
+                <span> <AiOutlineInfoCircle className=' text-gray-500 h-5 w-5 ' /> </span> Service plans
               </a>
               <a href="#" className="flex items-center gap-2 hover:underline">
-                <span>💳</span> Pricing
+                <span> <SlCreditCard className=' text-gray-500 h-5 w-5 ' /> </span> Pricing
               </a>
               <a href="#" className="flex items-center gap-2 hover:underline text-black">
-                <span>🧱</span> Supported chains
+                <span> <IoCubeOutline className=' text-gray-500 h-5 w-5 ' /> </span> Supported chains
               </a>
             </div>
           </div>
@@ -259,19 +263,19 @@ const HomePage = () => {
             <h3 className="text-lg font-bold">Socials</h3>
             <div className="grid grid-cols-2 gap-y-4 gap-x-4 text-sm text-gray-500">
               <a href="#" className="flex items-center gap-2 hover:underline">
-                <span>🕊️</span> X (Twitter)
+                <span><FaXTwitter className=' text-gray-500 h-5 w-5 ' /></span> X (Twitter)
               </a>
               <a href="#" className="flex items-center gap-2 hover:underline">
-                <span>🎮</span> Discord
+                <span> <FaDiscord className=' text-gray-500 h-5 w-5 ' /> </span> Discord
               </a>
               <a href="#" className="flex items-center gap-2 hover:underline">
-                <span>✈️</span> Telegram
+                <span> <FaTelegramPlane className=' text-gray-500 h-5 w-5 ' /> </span> Telegram
               </a>
               <a href="#" className="flex items-center gap-2 hover:underline">
-                <span>📬</span> Substack
+                <span> <BsSubstack className=' text-gray-500 h-5 w-5 ' /> </span> Substack
               </a>
               <a href="#" className="flex items-center gap-2 hover:underline">
-                <span>👽</span> Reddit
+                <span> <FaRedditAlien className=' text-gray-500 h-5 w-5 ' /> </span> Reddit
               </a>
             </div>
           </div>
