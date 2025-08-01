@@ -30,6 +30,7 @@ const HomePage = () => {
 
         <div className=' col-span-2 grow-0 flex flex-col gap-8  ' >
 
+          {/* 3 cards  */}
           <div className='grid grid-cols-1 md:grid-cols-3 gap-6' >
 
             <div className="col-span-1 bg-white flex gap-3 p-4 rounded-[20px] flex-col shadow-sm hover:shadow-lg text-left">
@@ -59,6 +60,7 @@ const HomePage = () => {
 
           </div>
 
+          {/* charging model  */}
           <div className=' shadow-sm hover:shadow-lg col-span-1 grow-0 gap-5 flex flex-col px-5  py-6 bg-white rounded-[20px] ' >
             <div className=' flex flex-col gap-5 px-3 ' >
 
@@ -88,7 +90,7 @@ const HomePage = () => {
             </div>
           </div>
 
-
+          {/* Products and plans */}
           <div className="flex flex-col gap-4">
             <h3 className="text-xl font-semibold">Products and plans</h3>
 
@@ -155,28 +157,29 @@ const HomePage = () => {
               </div>
 
               {/* Node API */}
-              <div className="bg-white p-8 rounded-[20px] relative flex flex-col gap-3 bg-[linear-gradient(294deg,_rgba(255,_255,_255,_0.26)_0%,_rgba(255,_255,_255,_0.8)_32%)] shadow group ">
-                <img src='' />
+              <div className=" p-8 rounded-[20px] relative flex flex-col gap-3 bg-[linear-gradient(294deg,_rgba(255,_255,_255,_0.26)_0%,_rgba(255,_255,_255,_0.8)_32%)]  shadow group relative ">
 
-                <div className=' flex gap-3 relative items-center ' >
+                <img src='/assets/node_api.png' className=' z-0 absolute inset-0 object-cover w-full h-full rounded-[20px] ' alt='' />
+
+                <div className=' z-20 flex gap-3 relative items-center ' >
 
                   <IoCubeOutline className=' inline-block  text-blue-500 ' size={30} />
                   <p>Node API</p>
 
-                  <button className=' group-hover:block hidden absolute ml- auto items-center justify-center cursor-pointer absolute top-0 right-0 h-8 w-8 bg-white rounded-full bg-white ' >
+                  <button className=' group-hover:block hidden absolute ml- auto items-center justify-center cursor-pointer absolute top-0 right-0 h-8 w-8 bg-white rounded-lg p-1 bg-white ' >
                     <MdKeyboardArrowRight size={20} />
                   </button>
 
                 </div>
 
-                <div className=' flex flex-col text-[#82899A] font-normal  '>
-                  <p>instant gateway to blockchain interaction:</p>
+                <div className=' z-20 flex flex-col text-[#82899A] font-normal  '>
+                  <p className=' text-normal text-sm '>Instant gateway to blockchain interaction:</p>
 
                   <div>
-                    <ul>
-                      <li className=' list-disc list-inside  ' >list</li>
-                      <li className=' list-disc list-inside  ' >list</li>
-                      <li className=' list-disc list-inside  ' >list</li>
+                    <ul className=' text-sm pt-4 '>
+                      <li className=' list-disc list-inside  ' >RPC/REST endpoints</li>
+                      <li className=' list-disc list-inside  ' >Standard, trace, and debug calls</li>
+                      <li className=' list-disc list-inside  ' >HTTPS and WSS support</li>
                     </ul>
                   </div>
 
@@ -185,100 +188,102 @@ const HomePage = () => {
               </div>
 
               {/* Advanced API */}
-              <div className="bg-white p-4 rounded-md shadow">
-                <p className="font-medium">Advanced API</p>
-                <p className="text-sm text-gray-500">Details about Advanced API</p>
+              <div className=" p-8 rounded-[20px] relative flex flex-col gap-3 bg-[linear-gradient(294deg,_rgba(255,_255,_255,_0.26)_0%,_rgba(255,_255,_255,_0.8)_32%)] shadow group relative  ">
+
+                <img src='/assets/advanced.png' className=' z-0 absolute inset-0 object-cover w-full h-full rounded-[20px] ' alt='' />
+
+                <div className="absolute inset-0 bg-gradient-to-r from-white/40 to-white/80 z-10"></div>
+
+
+                <div className=' flex gap-3 relative items-center z-20 ' >
+
+                  <IoCubeOutline className=' inline-block  text-blue-500 ' size={30} />
+                  <p>Advanced API</p>
+
+                  <button className=' group-hover:block hidden absolute ml-auto items-center justify-center cursor-pointer absolute top-0 right-0 h-8 w-8 bg-white rounded-lg p-1 bg-white ' >
+                    <MdKeyboardArrowRight size={20} />
+                  </button>
+
+                </div>
+
+                <div className=' flex flex-col text-[#82899A] font-normal z-20  '>
+                  <p className=' text-normal text-sm '>Optimized, indexed, and cached data for most popular Web3 scenarios:</p>
+
+                  <div>
+                    <ul className=' text-sm pt-4 '>
+                      <li className=' list-disc list-inside  ' >High-speed Archive data access</li>
+                      <li className=' list-disc list-inside  ' >Multi-chain queries in a single request</li>
+                    </ul>
+                  </div>
+
+                </div>
+
               </div>
             </div>
-
 
           </div>
         </div>
 
+        <div className=' col-span-1 sticky top-30 h-fit flex flex-col gap-8  ' >
 
-        {/* <div className=' grid grid-cols-1 md:grid-cols-2 gap-4 ' >
-            <div className=' col-span-1 '>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos facilis libero necessitatibus sapiente. Sit quidem dignissimos nemo tempora veritatis qui? Suscipit voluptatem enim delectus molestias similique magni, nulla ipsam at?</div>
 
-            <div className=' col-span-1 '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Doloribus, cumque. Quasi, nobis. Doloremque, asperiores. Doloribus, cumque. Quasi, nobis. Doloremque, asperiores. Doloribus, cumque. Quasi, nobis.</div>
-          </div> */}
+          {/* Docs Card */}
+          <div className="bg-white rounded-2xl shadow-sm p-6 space-y-4">
+            <div className="flex justify-between items-center">
+              <h3 className="text-lg font-bold">Docs</h3>
+              <a
+                href="#"
+                className="text-blue-600 text-sm font-medium bg-blue-50 hover:bg-blue-100 px-3 py-1 rounded-xl border border-blue-100"
+              >
+                View all
+              </a>
+            </div>
+            <div className="space-y-3 text-sm text-gray-500">
+              <a href="#" className="flex items-center gap-2 hover:underline">
+                <span>🌐</span> Getting started
+              </a>
+              <a href="#" className="flex items-center gap-2 hover:underline">
+                <span>ℹ️</span> Service plans
+              </a>
+              <a href="#" className="flex items-center gap-2 hover:underline">
+                <span>💳</span> Pricing
+              </a>
+              <a href="#" className="flex items-center gap-2 hover:underline text-black">
+                <span>🧱</span> Supported chains
+              </a>
+            </div>
+          </div>
 
+          {/* Socials Card */}
+          <div className="bg-white rounded-2xl shadow-sm p-6 space-y-4">
+            <h3 className="text-lg font-bold">Socials</h3>
+            <div className="grid grid-cols-2 gap-y-4 gap-x-4 text-sm text-gray-500">
+              <a href="#" className="flex items-center gap-2 hover:underline">
+                <span>🕊️</span> X (Twitter)
+              </a>
+              <a href="#" className="flex items-center gap-2 hover:underline">
+                <span>🎮</span> Discord
+              </a>
+              <a href="#" className="flex items-center gap-2 hover:underline">
+                <span>✈️</span> Telegram
+              </a>
+              <a href="#" className="flex items-center gap-2 hover:underline">
+                <span>📬</span> Substack
+              </a>
+              <a href="#" className="flex items-center gap-2 hover:underline">
+                <span>👽</span> Reddit
+              </a>
+            </div>
+          </div>
+
+
+        </div>
 
       </div>
 
-      <div className=' col-span-1 grow-0 h-screen overflow-scroll  ' >
-
-      </div>
 
     </main >
-    // <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
 
-    //   {/* Summary Cards */}
-    //   <div className="col-span-1 bg-white p-4 rounded-xl shadow-sm text-center">
-    //     <h2 className="text-sm text-gray-500">Total requests (24h)</h2>
-    //     <p className="text-lg font-bold mt-2">No requests.</p>
-    //   </div>
-    //   <div className="col-span-1 bg-white p-4 rounded-xl shadow-sm text-center">
-    //     <h2 className="text-sm text-gray-500">Top chain (reqs) (24h)</h2>
-    //     <p className="text-lg font-bold mt-2">No requests.</p>
-    //   </div>
-    //   <div className="col-span-1 bg-white p-4 rounded-xl shadow-sm text-center">
-    //     <h2 className="text-sm text-gray-500">Top project (reqs) (24h)</h2>
-    //     <p className="text-lg font-bold mt-2">No requests.</p>
-    //   </div>
-
-    //   {/* Charging Model Section */}
-    //   <div className="col-span-1 md:col-span-2 bg-white p-4 rounded-xl shadow-sm">
-    //     <h3 className="text-sm text-gray-600 mb-1">Charging model</h3>
-    //     <div className="flex items-center justify-between">
-    //       <span className="text-xs font-medium bg-purple-100 text-purple-800 px-2 py-1 rounded">Freemium</span>
-    //       <span className="text-gray-800 font-semibold text-sm">0 API Credits ≈ $0.00</span>
-    //     </div>
-    //     <div className="mt-3 bg-blue-50 p-3 rounded text-sm text-blue-800 flex justify-between items-center">
-    //       <p>Get more: Ultimate number of blockchains, superior rate limits, x3 projects...</p>
-    //       <button className="bg-gradient-to-r from-blue-500 to-purple-500 text-white text-sm px-3 py-1 rounded">Get Premium</button>
-    //     </div>
-    //   </div>
-
-    //   {/* Docs Section */}
-    //   <div className="col-span-1 bg-white p-4 rounded-xl shadow-sm">
-    //     <h3 className="font-semibold mb-2">Docs</h3>
-    //     <ul className="space-y-2 text-sm text-blue-600">
-    //       <li><a href="#">Getting started</a></li>
-    //       <li><a href="#">Service plans</a></li>
-    //       <li><a href="#">Pricing</a></li>
-    //       <li><a href="#">Supported chains</a></li>
-    //     </ul>
-    //   </div>
-
-    //   {/* Products and Plans Section */}
-    //   <div className="col-span-1 md:col-span-2 bg-gradient-to-br from-white to-blue-50 p-5 rounded-xl shadow-sm">
-    //     <h3 className="font-semibold text-lg mb-3">Premium</h3>
-    //     <div className="grid md:grid-cols-2 gap-3 text-sm">
-    //       <ul className="list-disc list-inside space-y-1">
-    //         <li>Node API: 1.5k reqs/sec</li>
-    //         <li>Advanced API: 1k reqs/min</li>
-    //         <li>80+ blockchains</li>
-    //       </ul>
-    //       <ul className="list-disc list-inside space-y-1">
-    //         <li>Team accounts</li>
-    //         <li>Support portal</li>
-    //         <li>Multi-project stats</li>
-    //       </ul>
-    //     </div>
-    //   </div>
-
-    //   {/* Socials Section */}
-    //   <div className="col-span-1 bg-white p-4 rounded-xl shadow-sm">
-    //     <h3 className="font-semibold mb-2">Socials</h3>
-    //     <ul className="space-y-2 text-sm text-blue-600">
-    //       <li><a href="#">X (Twitter)</a></li>
-    //       <li><a href="#">Telegram</a></li>
-    //       <li><a href="#">Reddit</a></li>
-    //       <li><a href="#">Discord</a></li>
-    //       <li><a href="#">Substack</a></li>
-    //     </ul>
-    //   </div>
-    // </div>
   );
 };
 
